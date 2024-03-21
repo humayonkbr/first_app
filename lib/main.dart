@@ -25,7 +25,6 @@ class myApp extends StatelessWidget {
 
     );
 
-
   }
   }
 
@@ -35,18 +34,27 @@ class Home extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Colors.cyan,
-      body:Center(
-      child:Text(
-        'Hello world',
-        textAlign: TextAlign.center,
-        maxLines: 3,
-        style: TextStyle(
-            fontSize: 33,
-            fontWeight: FontWeight.w300,
-            backgroundColor: Colors.blue,
-            color: Colors.red,
-            overflow: TextOverflow.visible),
-      ),
+      body:Column(
+        mainAxisAlignment: MainAxisAlignment.center,
+        children: [
+          const Center(
+            child:Text(
+              'Hello world',
+              textAlign: TextAlign.center,
+              maxLines: 3,
+              style: TextStyle(
+                  fontSize: 33,
+                  fontWeight: FontWeight.w300,
+                  backgroundColor: Colors.blue,
+                  color: Colors.red,
+                  overflow: TextOverflow.visible),
+            ),
+          ),
+          Container(height: 50, width: 50, color: Colors.orange,
+            child: const Icon(Icons.abc_outlined),
+          ),
+          const Text('Hello'),
+        ],
       )
     );
   }
