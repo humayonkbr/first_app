@@ -54,6 +54,7 @@ class Home extends StatelessWidget {
             child: const Icon(Icons.abc_outlined),
           ),
           const Text('Hello'),
+          Icon(Icons.account_box_outlined)
         ],
       )
     );
